@@ -1,0 +1,18 @@
+class accept3NumbersAsCommandLineArgumentsAndPrintGreatest{
+	public static void main(String[] args){
+		int large = 0;
+		for(int i=0;i < args.length; i++)
+		{
+			if(Integer.parseInt(args[i]) > large)
+			{
+				large = Integer.parseInt(args[i]);
+			}
+		}
+		System.out.println(large);
+	}
+}
+    //How to compile and input command line arguments.
+    //C:\Users\GAUTAM\Desktop\Documents\Java>javac accept3NumbersAsCommandLineArgumentsAndPrintGreatest.java
+
+    //C:\Users\GAUTAM\Desktop\Documents\Java>java accept3NumbersAsCommandLineArgumentsAndPrintGreatest 10 20 15
+    //20
